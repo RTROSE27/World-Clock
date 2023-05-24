@@ -5,11 +5,10 @@ body {
 
 .container {
   max-width: 600px;
-  margin: 0 auto;
+  margin: 60px auto;
   background: white;
   border-radius: 10px;
   padding: 30px;
-  margin: 60px 0;
 }
 
 .city {
