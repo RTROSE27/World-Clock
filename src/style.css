@@ -16,6 +16,7 @@ body {
   display: flex;
   margin: 20px, 0px;
   justify-content: space-between;
+  padding: 20px 0;
   border-bottom: 1px dashed grey;
 }
 
