@@ -10,12 +10,14 @@ setInterval(function () {
   )} <small>${losAngelesTime.format("A")}</small>`;
 }, 1000);
 
-let parisElement = document.querySelector("#paris");
-let parisDateElement = parisElement.querySelector(".date");
-let parisTimeElement = parisElement.querySelector(".time");
-let parisTime = moment().tz("Europe/Paris");
+setInterval(function () {
+  let parisElement = document.querySelector("#paris");
+  let parisDateElement = parisElement.querySelector(".date");
+  let parisTimeElement = parisElement.querySelector(".time");
+  let parisTime = moment().tz("Europe/Paris");
 
-parisDateElement.innerHTML = parisTime.format("MMMM Do YYYY");
-parisTimeElement.innerHTML = `${parisTime.format(
-  "h:mm:ss"
-)} <small>${parisTime.format("A")}</small>`;
+  parisDateElement.innerHTML = parisTime.format("MMMM Do YYYY");
+  parisTimeElement.innerHTML = `${parisTime.format(
+    "h:mm:ss"
+  )} <small>${parisTime.format("A")}</small>`;
+}, 1000);
