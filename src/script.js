@@ -24,7 +24,8 @@ setInterval(function () {
 
 function updateCity(event) {
   let cityTimeZone = event.target.value;
-  console.log(cityTimeZone);
+  let cityTime = moment().tz(cityTimeZone);
+  console.log(cityTime.format("MMMM Do YYYY"));
 }
 
 let citiesSelectElement = document.querySelector("#city");
